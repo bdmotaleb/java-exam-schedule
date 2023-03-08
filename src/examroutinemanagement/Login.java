@@ -5,6 +5,16 @@
  */
 package examroutinemanagement;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -98,8 +108,40 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    Connection con;
+    PreparedStatement insert;
+    
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
+        try {
+            // DB connection
+            Class.forName("com.mysql.jdbc.Driver");
+           
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/routine_management","root","");
+            
+            String email = txtemail.getText();
+            String password = txtpassword.getText();
+            
+            Statement stm = con.createStatement();
+            
+            String sql = "SELECT * FROM `users` WHERE email='"+email+"' and password='"+password+"'";
+            ResultSet rs = stm.executeQuery(sql);
+            
+            if(rs.next()){
+                dispose();
+                Dashboard home = new Dashboard();
+                home.show();
+            }else{
+                JOptionPane.showMessageDialog(this,"These credentials do not match our records.");
+                txtemail.setText("");
+                txtpassword.setText("");
+            }
+            
+            con.close();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_loginButtonActionPerformed
 
     /**
