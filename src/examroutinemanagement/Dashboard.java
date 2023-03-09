@@ -5,17 +5,67 @@
  */
 package examroutinemanagement;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
  */
 public class Dashboard extends javax.swing.JFrame {
+    public int z=0;
 
     /**
      * Creates new form Dashboard
      */
     public Dashboard() {
         initComponents();
+        jButton2.setVisible(false);
+            jButton3.setVisible(false);
+            jButton4.setVisible(false);
+            jButton5.setVisible(false);
+            jButton6.setVisible(false);
+            jButton7.setVisible(false);
+            jButton8.setVisible(false);
+            jButton9.setVisible(false);
+            jButton10.setVisible(false);
+            jButton11.setVisible(false);
+            jButton12.setVisible(false);
+            jButton13.setVisible(false);
+            jButton14.setVisible(false);
+            jButton15.setVisible(false);
+            jButton16.setVisible(false);
+            jButton17.setVisible(false);
+            jButton18.setVisible(false);
+            jButton19.setVisible(false);
+            jButton20.setVisible(false);
+            jButton21.setVisible(false);
+            jButton22.setVisible(false);
+            jButton23.setVisible(false);
+            jButton24.setVisible(false);
+
+            jLabel14.setVisible(false);
+            jLabel15.setVisible(false);
+            jLabel16.setVisible(false);
+            jLabel17.setVisible(false);
+            jLabel18.setVisible(false);
+            jLabel19.setVisible(false);
+            jLabel20.setVisible(false);
+            jLabel21.setVisible(false);
+            jLabel1.setVisible(false);
+            jLabel22.setVisible(false);
+            jLabel23.setVisible(false);
+            jLabel2.setVisible(false);
+            jLabel24.setVisible(false);
+            jLabel25.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel26.setVisible(false);
+            jLabel27.setVisible(false);
+            jLabel4.setVisible(false);
+            jLabel28.setVisible(false);
+            jLabel29.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel30.setVisible(false);
+            jLabel31.setVisible(false);
     }
 
     /**
@@ -104,6 +154,14 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel21.setText("Class List");
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/control.png"))); // NOI18N
+        jButton1.setFocusable(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -111,92 +169,286 @@ public class Dashboard extends javax.swing.JFrame {
         });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teachers.png"))); // NOI18N
+        jButton2.setFocusable(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton2.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton2ComponentShown(evt);
+            }
+        });
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teacher-add.png"))); // NOI18N
+        jButton3.setFocusable(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton3.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton3ComponentShown(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teacher-delete.png"))); // NOI18N
+        jButton4.setFocusable(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton4.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton4ComponentShown(evt);
+            }
+        });
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new.png"))); // NOI18N
+        jButton5.setFocusable(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton5.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton5ComponentShown(evt);
+            }
+        });
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        jButton6.setFocusable(false);
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton6.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton6ComponentShown(evt);
+            }
+        });
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/delete-user.png"))); // NOI18N
+        jButton7.setFocusable(false);
+        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton7.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton7ComponentShown(evt);
+            }
+        });
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/class-add.png"))); // NOI18N
+        jButton8.setFocusable(false);
+        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton8.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton8ComponentShown(evt);
+            }
+        });
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        jButton9.setFocusable(false);
+        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton9.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton9.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton9ComponentShown(evt);
+            }
+        });
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        jButton10.setFocusable(false);
+        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton10.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton10.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton10ComponentShown(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Remove Class");
 
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        jButton11.setFocusable(false);
+        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton11.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton11.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton11ComponentShown(evt);
+            }
+        });
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel22.setText("Room Add");
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        jButton12.setFocusable(false);
+        jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton12.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton12.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton12ComponentShown(evt);
+            }
+        });
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel23.setText("Room List");
 
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        jButton13.setFocusable(false);
+        jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton13.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton13.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton13ComponentShown(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Remove Room");
 
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        jButton14.setFocusable(false);
+        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton14.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton14.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton14ComponentShown(evt);
+            }
+        });
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel24.setText("Subject Add");
 
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        jButton15.setFocusable(false);
+        jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton15.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton15.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton15ComponentShown(evt);
+            }
+        });
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel25.setText("Subject List");
 
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        jButton16.setFocusable(false);
+        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton16.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton16.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton16ComponentShown(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Remove Subject");
 
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        jButton17.setFocusable(false);
+        jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton17.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton17.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton17ComponentShown(evt);
+            }
+        });
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel26.setText("Slot Add");
 
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        jButton18.setFocusable(false);
+        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton18.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton18.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton18ComponentShown(evt);
+            }
+        });
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel27.setText("Slot List");
 
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        jButton19.setFocusable(false);
+        jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton19.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton19.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton19ComponentShown(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Remove Slot");
 
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        jButton20.setFocusable(false);
+        jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton20.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton20.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton20ComponentShown(evt);
+            }
+        });
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel28.setText("Routine Add");
 
         jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        jButton21.setFocusable(false);
+        jButton21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton21.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton21.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton21ComponentShown(evt);
+            }
+        });
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel29.setText("Routine List");
 
         jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        jButton22.setFocusable(false);
+        jButton22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton22.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton22.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton22ComponentShown(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Remove Routine");
 
         jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/logout.png"))); // NOI18N
+        jButton23.setFocusable(false);
+        jButton23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton23.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton23.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton23ComponentShown(evt);
+            }
+        });
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel30.setText("Logout");
 
         jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/Close.png"))); // NOI18N
+        jButton24.setFocusable(false);
+        jButton24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton24.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton24.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jButton24ComponentShown(evt);
+            }
+        });
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel31.setText("Close Application");
@@ -206,47 +458,7 @@ public class Dashboard extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(49, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton3)
-                    .addComponent(jLabel14))
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton2)
-                    .addComponent(jLabel15))
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton4)
-                    .addComponent(jLabel16))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton5)
-                    .addComponent(jLabel17))
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton6)
-                    .addComponent(jLabel18))
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton7)
-                    .addComponent(jLabel19))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton8)
-                    .addComponent(jLabel20))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton9)
-                    .addComponent(jLabel21))
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton10)
-                    .addComponent(jLabel1))
-                .addContainerGap(65, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(173, 173, 173)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jButton11)
                     .addComponent(jLabel22))
@@ -284,32 +496,73 @@ public class Dashboard extends javax.swing.JFrame {
                     .addComponent(jLabel4))
                 .addGap(71, 71, 71))
             .addGroup(layout.createSequentialGroup()
-                .addGap(165, 165, 165)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton20)
-                    .addComponent(jLabel28))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton21)
-                    .addComponent(jLabel29))
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton22)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton23)
-                    .addComponent(jLabel30))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton24)
-                    .addComponent(jLabel31))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton20)
+                            .addComponent(jLabel28))
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton21)
+                            .addComponent(jLabel29))
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton22)
+                            .addComponent(jLabel5))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton23)
+                            .addComponent(jLabel30))
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton24)
+                            .addComponent(jLabel31)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(jButton1)
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton3)
+                            .addComponent(jLabel14))
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton2)
+                            .addComponent(jLabel15))
+                        .addGap(36, 36, 36)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton4)
+                            .addComponent(jLabel16))
+                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton5)
+                            .addComponent(jLabel17))
+                        .addGap(36, 36, 36)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton6)
+                            .addComponent(jLabel18))
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton7)
+                            .addComponent(jLabel19))
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton8)
+                            .addComponent(jLabel20))
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton9)
+                            .addComponent(jLabel21))
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jButton10)
+                            .addComponent(jLabel1))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton5)
@@ -336,7 +589,7 @@ public class Dashboard extends javax.swing.JFrame {
                             .addComponent(jLabel20)
                             .addComponent(jLabel21)
                             .addComponent(jLabel1))))
-                .addGap(33, 33, 33)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -398,6 +651,287 @@ public class Dashboard extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+       int a = JOptionPane.showConfirmDialog(null, "Are you sure you want to logout?","Select", JOptionPane.YES_NO_OPTION);
+       
+       if(a==0){
+           setVisible(false);
+           new Login().setVisible(true);
+       }
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        int a = JOptionPane.showConfirmDialog(null, "Do you want close this application?","Select", JOptionPane.YES_NO_OPTION);
+       
+       if(a==0){
+           System.exit(0);
+       }
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        if(z==0){
+            try {
+                Thread.sleep(250);
+                jButton3.setVisible(true);
+                jLabel14.setVisible(true);
+            } catch (Exception e) {
+            }
+        }else{
+            jButton2.setVisible(false);
+            jButton3.setVisible(false);
+            jButton4.setVisible(false);
+            jButton5.setVisible(false);
+            jButton6.setVisible(false);
+            jButton7.setVisible(false);
+            jButton8.setVisible(false);
+            jButton9.setVisible(false);
+            jButton10.setVisible(false);
+            jButton11.setVisible(false);
+            jButton12.setVisible(false);
+            jButton13.setVisible(false);
+            jButton14.setVisible(false);
+            jButton15.setVisible(false);
+            jButton16.setVisible(false);
+            jButton17.setVisible(false);
+            jButton18.setVisible(false);
+            jButton19.setVisible(false);
+            jButton20.setVisible(false);
+            jButton21.setVisible(false);
+            jButton22.setVisible(false);
+            jButton23.setVisible(false);
+            jButton24.setVisible(false);
+
+            jLabel14.setVisible(false);
+            jLabel15.setVisible(false);
+            jLabel16.setVisible(false);
+            jLabel17.setVisible(false);
+            jLabel18.setVisible(false);
+            jLabel19.setVisible(false);
+            jLabel20.setVisible(false);
+            jLabel21.setVisible(false);
+            jLabel1.setVisible(false);
+            jLabel22.setVisible(false);
+            jLabel23.setVisible(false);
+            jLabel2.setVisible(false);
+            jLabel24.setVisible(false);
+            jLabel25.setVisible(false);
+            jLabel3.setVisible(false);
+            jLabel26.setVisible(false);
+            jLabel27.setVisible(false);
+            jLabel4.setVisible(false);
+            jLabel28.setVisible(false);
+            jLabel29.setVisible(false);
+            jLabel5.setVisible(false);
+            jLabel30.setVisible(false);
+            jLabel31.setVisible(false);
+            
+            z=0;
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton3ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton3ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton2.setVisible(true);
+                jLabel15.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton3ComponentShown
+
+    private void jButton2ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton2ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton4.setVisible(true);
+                jLabel16.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton2ComponentShown
+
+    private void jButton4ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton4ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton5.setVisible(true);
+                jLabel17.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton4ComponentShown
+
+    private void jButton5ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton5ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton6.setVisible(true);
+                jLabel18.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton5ComponentShown
+
+    private void jButton6ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton6ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton7.setVisible(true);
+                jLabel19.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton6ComponentShown
+
+    private void jButton7ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton7ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton8.setVisible(true);
+                jLabel20.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton7ComponentShown
+
+    private void jButton8ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton8ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton9.setVisible(true);
+                jLabel21.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton8ComponentShown
+
+    private void jButton9ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton9ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton10.setVisible(true);
+                jLabel1.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton9ComponentShown
+
+    private void jButton10ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton10ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton11.setVisible(true);
+                jLabel22.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton10ComponentShown
+
+    private void jButton12ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton12ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton13.setVisible(true);
+                jLabel2.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton12ComponentShown
+
+    private void jButton13ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton13ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton14.setVisible(true);
+                jLabel24.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton13ComponentShown
+
+    private void jButton14ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton14ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton15.setVisible(true);
+                jLabel25.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton14ComponentShown
+
+    private void jButton15ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton15ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton16.setVisible(true);
+                jLabel3.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton15ComponentShown
+
+    private void jButton16ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton16ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton17.setVisible(true);
+                jLabel26.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton16ComponentShown
+
+    private void jButton17ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton17ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton18.setVisible(true);
+                jLabel27.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton17ComponentShown
+
+    private void jButton18ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton18ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton19.setVisible(true);
+                jLabel4.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton18ComponentShown
+
+    private void jButton19ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton19ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton20.setVisible(true);
+                jLabel28.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton19ComponentShown
+
+    private void jButton20ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton20ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton21.setVisible(true);
+                jLabel29.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton20ComponentShown
+
+    private void jButton21ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton21ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton22.setVisible(true);
+                jLabel5.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton21ComponentShown
+
+    private void jButton22ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton22ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton23.setVisible(true);
+                jLabel30.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton22ComponentShown
+
+    private void jButton23ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton23ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton24.setVisible(true);
+                jLabel31.setVisible(true);
+                z=1;
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton23ComponentShown
+
+    private void jButton24ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton24ComponentShown
+        
+    }//GEN-LAST:event_jButton24ComponentShown
+
+    private void jButton11ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButton11ComponentShown
+        try {
+                Thread.sleep(250);
+                jButton12.setVisible(true);
+                jLabel23.setVisible(true);
+            } catch (Exception e) {
+            }
+    }//GEN-LAST:event_jButton11ComponentShown
 
     /**
      * @param args the command line arguments
