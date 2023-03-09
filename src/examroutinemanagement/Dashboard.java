@@ -27,20 +27,208 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1366, 768));
+        setMinimumSize(new java.awt.Dimension(1366, 768));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/control.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 23, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 11, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(529, 11, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/delete-user.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(635, 11, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teacher-add.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 11, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teachers.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 11, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teacher-delete.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 11, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/class-add.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 11, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(807, 11, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/class-remove.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(879, 11, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(972, 11, -1, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/class-room.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1053, 11, -1, -1));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1148, 11, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel14.setText("Teacher Add");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 77, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel15.setText("Teacher List");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 77, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel16.setText("Teacher Remove");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 77, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel17.setText("Student Add");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(422, 77, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel18.setText("Student List");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 77, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel19.setText("Student Delete");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 77, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel20.setText("Class Add");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 77, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel21.setText("Class List");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 77, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel22.setText("Class Remove");
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(867, 77, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel23.setText("Room Add");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 77, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel24.setText("Room List");
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1053, 77, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel25.setText("Room Remove");
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1132, 77, -1, -1));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/add-new-60.png"))); // NOI18N
+        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1242, 14, -1, -1));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 122, -1, -1));
+
+        jLabel28.setText("Subject Add");
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(1243, 80, -1, -1));
+
+        jLabel29.setText("Subject List");
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 193, -1, -1));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 122, -1, -1));
+
+        jLabel31.setText("Subject Remove");
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 193, -1, -1));
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 122, -1, -1));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 122, -1, -1));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(529, 122, -1, -1));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/new-60.png"))); // NOI18N
+        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(635, 122, -1, -1));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/list.png"))); // NOI18N
+        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 122, -1, -1));
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/remove-60.png"))); // NOI18N
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(816, 122, -1, -1));
+
+        jLabel38.setText("Time Slot");
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 193, -1, -1));
+
+        jLabel39.setText("Time Slot List");
+        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 193, -1, -1));
+
+        jLabel40.setText("Time Slot Remove");
+        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 193, -1, -1));
+
+        jLabel41.setText("Routine Add");
+        getContentPane().add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(636, 193, -1, -1));
+
+        jLabel42.setText("Routine List");
+        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(731, 193, -1, -1));
+
+        jLabel43.setText("Routine Remove");
+        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(807, 188, -1, -1));
+
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/logout.png"))); // NOI18N
+        getContentPane().add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(904, 122, -1, -1));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/Close.png"))); // NOI18N
+        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(982, 122, -1, -1));
+        getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 1400, 870));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +267,51 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
