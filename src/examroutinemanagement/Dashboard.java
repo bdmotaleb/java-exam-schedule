@@ -187,6 +187,11 @@ public class Dashboard extends javax.swing.JFrame {
                 jButton3ComponentShown(evt);
             }
         });
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/teacher-delete.png"))); // NOI18N
         jButton4.setFocusable(false);
@@ -932,6 +937,10 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (Exception e) {
             }
     }//GEN-LAST:event_jButton11ComponentShown
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        new TeacherAdd().setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

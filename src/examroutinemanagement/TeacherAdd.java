@@ -5,6 +5,8 @@
  */
 package examroutinemanagement;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -186,7 +188,7 @@ public class TeacherAdd extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+        JOptionPane.showMessageDialog(this, "Working...");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
