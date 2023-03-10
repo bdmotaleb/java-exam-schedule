@@ -49,7 +49,7 @@ public class TimeSlotList extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Class List");
+        jLabel1.setText("Time Slot List");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

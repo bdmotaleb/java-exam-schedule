@@ -36,12 +36,8 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -52,22 +48,12 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Class Update or Remove");
+        jLabel1.setText("Time Slot Update or Remove");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Code");
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Name");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("Code");
+        jLabel2.setText("ID");
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-
-        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examroutinemanagement/images/search.png"))); // NOI18N
         jButton1.setText("Search");
@@ -123,17 +109,6 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(92, 92, 92)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(96, 96, 96)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton2)
@@ -165,15 +140,7 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                .addGap(121, 121, 121)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -237,10 +204,7 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
                 Connection con = ConnectionProvider.getCon();
                 Statement stm = con.createStatement();
                 
-                String start_time = jTextField2.getText();
-                String end_time = jTextField3.getText();
-
-                String sql = "UPDATE time_slots SET start_time='"+start_time+"',end_time='"+end_time+"' WHERE id ='"+search+"'";
+                String sql = "UPDATE time_slots SET start_time='', end_time='' WHERE id =''";
                 stm.executeUpdate(sql);
                 JOptionPane.showMessageDialog(null, "Update success");
                 setVisible(false);
@@ -261,12 +225,6 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
             String sql = "SELECT * FROM `time_slots` WHERE id='"+search+"'";
             ResultSet rs = stm.executeQuery(sql);
             
-            if (rs.next()) {
-                jTextField2.setText(rs.getString(2));
-                jTextField3.setText(rs.getString(3));
-            }else{
-                JOptionPane.showMessageDialog(null, "Data does not exist.");
-            }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Something went wrong.");
         }
@@ -318,13 +276,9 @@ public class TimeSlotUpdateRemove extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
